@@ -3,12 +3,19 @@
 $(document).ready(function(){
 
 // call functions here
-getIt()
+getIt();
 
 });
 
 function getIt() {
   $("p").click(function() {
     alert("Hey!");
+  });
+}
+
+function frameIt() {
+  $("img").on('load', function()) {
+    $(this).addClass('tasty');
+
   });
 }
