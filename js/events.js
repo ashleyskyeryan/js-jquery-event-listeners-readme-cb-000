@@ -15,17 +15,16 @@ function getIt() {
 }
 
 function frameIt() {
-  $("img").on('load', function()) {
+  $('img').on('load', function() {
     $(this).addClass('tasty');
 
   });
 }
 
 function pressIt() {
-  $(form).on('keydown', function(key)) {
-    if(key.which == 103) {
-      alert('g was pressed');
-
+  $('input').on('keydown', function(key)) {
+    if(key.which == 71) {
+      alert('Someone pressed the G key!!!');
     }
   });
 }
